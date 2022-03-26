@@ -1,4 +1,16 @@
-<p>view-articles works!</p>
-<div *ngFor="let article of articles">
-    <div>{{article.title}}</div>
-</div>
+<div class="container" id="main-container">
+    <div *ngFor="let article of articles" class="card mb-3">
+        <div *ngIf="article.approved" class="card-body">
+          <div class="d-flex flex-column flex-lg-row">
+            <div class="row flex-fill">
+              <div class="col-sm-5">
+                <h4 class="h5">{{article?.title}}</h4>
+                <span>{{article?.authors}}</span> <br>
+                <span>{{article?.abstrct}}</span> <br>
+                <span>Approved? - {{article?.approved}}</span>
+              </div>
+            </div>
+          </div>
+      </div>
+  </div>
+  
