@@ -10,13 +10,14 @@
               <span>Approved? - {{article?.approved}}</span>
             </div>
             <div class="col-sm-3 text-lg-end">
-              <a href="#" class="btn btn-primary stretched-link" data-original-title="Approve">Approve</a>
+              <a href="#" routerLink="/admin" routerLinkActive="active-button" class="btn btn-primary stretched-link" (click)="onUpdateArticle(article, 'approve')" data-original-title="Approve">Approve</a>
             </div>
             <div class="col-sm-3 text-lg-end">
-              <a href="#" class="btn btn-primary stretched-link" data-original-title="Reject">Reject</a>
+              <a href="#" routerLink="/admin" routerLinkActive="active-button" class="btn btn-primary stretched-link" (click)="onUpdateArticle(article, 'reject')" data-original-title="Reject">Reject</a>
             </div>
           </div>
         </div>
     </div>
   </div>
+  <router-outlet></router-outlet>
   

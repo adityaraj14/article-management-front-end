@@ -24,4 +24,19 @@ export class AdminComponent implements OnInit {
       }
     )
   }
+
+  public onUpdateArticle(article: Article, status: string): void {
+    if (status === "approve") {
+      article.approved=true;
+    }
+    if (status === "reject") {
+      article.approved=false;
+    }
+    this.articleService.updateArticles(article).subscribe(
+      (response: Article) => {
+        console.log(response);
+      }
+    );
+  }
+
 }
