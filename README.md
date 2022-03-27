@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
 
-Node.js - download and install -> https://nodejs.org/dist/v16.14.2/node-v16.14.2-x64.msi (WINDOWS)
+Node.js - download and install inside the cloned repo directory -> https://nodejs.org/dist/v16.14.2/node-v16.14.2-x64.msi (WINDOWS)
     -> verify installation - node -v
 
 Angular CLI - install it using 'npm install'
